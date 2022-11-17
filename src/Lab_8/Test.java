@@ -8,8 +8,10 @@ public class Test {
 		
 		Point ob2= new Point(3,4);
 		
-		System.out.println(ob2);
 		
+		Line obj= new Line();
+		System.out.println(obj.getLength(0, 0, 0, 0));
+		Line obj2 = new Line(ob2);
 		
 		
 	}

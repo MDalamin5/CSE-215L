@@ -1,24 +1,32 @@
-package Lab_8;
+package Lab8_0;
 
 public class Line {
+
 	private Point start;
 	private Point end;
-	Point ob = new Point();
 	
-	Line(Point start, Point end)
+	public Line(Point start,Point end)
 	{
-		
-		
-		
+		this.start= start;
+		this.end= end;
 		
 	}
 	
-	Line(int x1, int x2, int y1, int y2)
+	public Line(int x1, int y1, int x2, int y2 )
 	{
-		x1= ob.getX();
-		x2=ob.getX();
-		y1=ob.getY();
-		y2=ob.getY();
+		
+		this.start=new Point();
+		start.setX(x1);
+		start.setY(y1);
+		
+		this.end=new Point(x2,y2);
+		end.setX(x2);
+		end.setY(y2);
+		
+		
+		
+		
+		
 	}
 
 	public Point getStart() {
@@ -37,14 +45,12 @@ public class Line {
 		this.end = end;
 	}
 	
-	double getLength(int x1, int x2, int y1, int y2)
-	
+	public double getLength()
 	{
-		double dx= x2-x1;
-		double dy = y2-y1;
+		int dx= start.getX()-start.getY();
+		int dy= start.getX()-start.getY();
 		
-		double length = Math.sqrt(dx-dy);
-		return length;
+		
 	}
 
 	@Override
@@ -54,5 +60,5 @@ public class Line {
 	
 	
 	
-
+	
 }
