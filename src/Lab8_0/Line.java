@@ -15,13 +15,10 @@ public class Line {
 	public Line(int x1, int y1, int x2, int y2 )
 	{
 		
-		this.start=new Point();
-		start.setX(x1);
-		start.setY(y1);
-		
-		this.end=new Point(x2,y2);
-		end.setX(x2);
-		end.setY(y2);
+		Point a = new Point(x1,y1);
+		Point b= new Point (x2,y2);
+		start=a;
+		end= b;
 		
 		
 		
@@ -47,9 +44,9 @@ public class Line {
 	
 	public double getLength()
 	{
-		int dx= start.getX()-start.getY();
-		int dy= start.getX()-start.getY();
-		
+		double x= (end.getX()-start.getX())*(end.getX()-start.getX());
+		double y= (end.getY()-start.getY())*(end.getY()-start.getY());
+		return Math.sqrt(x+y);
 		
 	}
 
