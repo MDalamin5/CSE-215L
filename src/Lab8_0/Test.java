@@ -8,6 +8,10 @@ public class Test {
 		//System.out.println(P_ob);
 		
 		Line ob = new Line(P_ob,P_ob2);
+		
 		System.out.println(ob.getLength());
+		
+		Line ob2 = new Line(1,2,3,4);
+		System.out.println(ob2.getLength());
 	}
 }
