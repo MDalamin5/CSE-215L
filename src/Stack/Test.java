@@ -8,11 +8,22 @@ public class Test {
 		ob.push(55);
 		ob.push(44);
 		System.out.println(ob.pop());
+		ob.push(2);
+		ob.push(3);
+		ob.push(5);
+		
+		ob.pop();
+		ob.pop();
+		ob.pop();
+		ob.pop();
+		ob.pop();
+		ob.pop();
+		
+		
+		
 		ob.show();
-		System.out.println();
-		System.out.println(ob.peek());
-		System.out.println();
-		System.out.println(ob.top);
+		
+		System.out.println(ob.isEmpty());
 	}
 
 }
