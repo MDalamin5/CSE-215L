@@ -46,7 +46,21 @@ public class Course {
 	
 	public void dropStudent(String student)
 	{
+		int indx=-1;
+		for(int i=0;i<stu.length;i++)
+		{
+			if(stu[i]==student)
+			{
+				indx=i;
+				break;
+			}
+		}
 		
+		if(indx>=0)
+		{
+			stu[indx]=" ";
+			
+		}
 	}
 	
 	public void clear()

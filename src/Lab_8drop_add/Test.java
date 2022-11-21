@@ -5,6 +5,7 @@ public class Test {
 			Course ob = new Course("BAN");
 			ob.addStudent("ALamin");
 			ob.addStudent("toki");
+			ob.dropStudent("ALamin");
 			ob.displayStu();
 		}
 }
